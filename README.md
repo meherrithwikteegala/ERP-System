@@ -6,7 +6,7 @@ It is constructed with React.
 ## You can have a look at the video for the demo 
 
 **Note: In the video, windows didn't allow you to make a record of the command prompt part, so you may not be able to see that part**
-https://drive.google.com/uc?id=1AanBFUc975q-QaIh40BH9KccWOKdjWw0&export=download
+https://drive.google.com/file/d/1AanBFUc975q-QaIh40BH9KccWOKdjWw0/view?usp=sharing
 
 
 
