@@ -1,105 +1,128 @@
-/* Common styles */
-.product-container {
+.order-container {
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.product-heading,
-.add-product-heading {
-  color: #333;
-  text-align: center;
-}
-
-.product-heading {
+.order-heading {
   font-size: 24px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.order-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-list {
   margin-bottom: 20px;
 }
 
-.add-product-heading {
-  font-size: 18px;
+.order-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
 }
 
-.add-product {
-  margin-bottom: 20px;
+.order-item p {
+  margin: 5px 0;
 }
 
-/* Table styles */
-.product-table {
-  width: 100%;
-  border-collapse: collapse; 
-}
-
-.product-header,
-.product-row {
-  display: flex;
-}
-
-.product-cell {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ddd;
-  text-align: center;
-}
-
-.product-cell:nth-child(odd) {
-  background-color: #f9f9f9; 
-}
-
-.product-cell input[type="text"] {
-  width: 100%; 
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-/* Button styles */
-.button {
-  display: block; 
-  width: 100%; /* Make button full width */
-  padding: 10px;
-  color: white;
+.view-details-button,
+.update-status-button,
+.delete-button,
+.close-details-button {
+  padding: 8px 12px;
+  margin-right: 5px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  text-align: center; 
-  background-color: #5A9; 
-  margin-bottom: 10px; 
-  transition: background-color 0.3s; /* Add transition for button background color */
 }
 
-.button:hover {
-  background-color: #4A8; /* Change background color on hover */
+.view-details-button,
+.update-status-button {
+  background-color: #44ff00;
+  color: #fff;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-  .product-container {
-    padding: 10px;
-  }
+.delete-button,
+.close-details-button {
+  background-color: #dc3545;
+  color: #fff;
+}
 
-  .product-cell {
-    padding: 5px;
-  }
+.dashboard-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
 
-  .product-heading {
-    font-size: 20px;
-  }
+.calendar-container {
+  margin-bottom: 20px;
+}
 
-  .add-product-heading {
-    font-size: 16px;
-  }
+.selected-orders {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
 
-  .button {
-    font-size: 14px;
-    padding: 8px;
-  }
+.selected-orders ul {
+  padding-left: 20px;
+}
 
-  .input-field {
-    padding: 3px;
-    font-size: 12px;
-  }
+.selected-orders li {
+  margin-bottom: 5px;
+}
+
+.selected-orders p {
+  margin: 5px 0;
+}
+
+/* Add this CSS to your existing stylesheet */
+
+.order-details {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.order-details h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.order-details p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.order-details .detail-label {
+  font-weight: bold;
+}
+
+.order-details .close-details-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.order-details .close-details-button:hover {
+  background-color: #d32f2f;
 }
