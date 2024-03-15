@@ -1,0 +1,121 @@
+.product-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-heading,
+.add-product-heading {
+  font-size: 1.5rem; 
+  margin-bottom: 1rem; 
+  text-align: center;
+}
+
+.add-product-heading {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem; 
+}
+
+.add-product {
+  margin-bottom: 1rem; 
+}
+
+.input-field {
+  width: calc(100% - 20px); 
+  padding: 0.625rem; 
+  margin-bottom: 0.625rem; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s; 
+}
+
+.input-field:focus {
+  border-color: #4CAF50; 
+}
+
+.button {
+  width: 100%;
+  padding: 0.625rem; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  margin-bottom: 0.625rem; 
+}
+
+.product-button,
+.delete-button {
+  background-color: rgb(152, 105, 245);
+  margin-right: 0.3125rem; 
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+.save {
+  background-color: #687;
+}
+
+
+.product-table {
+  width: 100%; 
+  overflow-x: auto;
+  border-collapse: collapse; 
+}
+
+.product-header,
+.product-row {
+  display: flex;
+}
+
+.product-cell {
+  flex: 1;
+  padding: 0.625rem; 
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.product-cell:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.product-cell input[type="text"] {
+  width: calc(100% - 0.75rem); 
+  padding: 0.3125rem; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .product-container {
+    padding: 1rem; 
+  }
+
+  .product-heading {
+    font-size: 1.25rem; 
+  }
+
+  .add-product-heading {
+    font-size: 1rem; 
+  }
+
+  .button {
+    font-size: 0.875rem; 
+    padding: 0.5rem; 
+  }
+
+  .input-field {
+    padding: 0.1875rem; 
+    font-size: 0.75rem; 
+  }
+
+  .product-cell {
+    padding: 0.3125rem; 
+  }
+}

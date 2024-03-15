@@ -1,0 +1,105 @@
+/* Common styles */
+.product-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+}
+
+.product-heading,
+.add-product-heading {
+  color: #333;
+  text-align: center;
+}
+
+.product-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.add-product-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.add-product {
+  margin-bottom: 20px;
+}
+
+/* Table styles */
+.product-table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.product-header,
+.product-row {
+  display: flex;
+}
+
+.product-cell {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.product-cell:nth-child(odd) {
+  background-color: #f9f9f9; 
+}
+
+.product-cell input[type="text"] {
+  width: 100%; 
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Button styles */
+.button {
+  display: block; 
+  width: 100%; /* Make button full width */
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center; 
+  background-color: #5A9; 
+  margin-bottom: 10px; 
+  transition: background-color 0.3s; /* Add transition for button background color */
+}
+
+.button:hover {
+  background-color: #4A8; /* Change background color on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .product-container {
+    padding: 10px;
+  }
+
+  .product-cell {
+    padding: 5px;
+  }
+
+  .product-heading {
+    font-size: 20px;
+  }
+
+  .add-product-heading {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .input-field {
+    padding: 3px;
+    font-size: 12px;
+  }
+}
